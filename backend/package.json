@@ -1,0 +1,30 @@
+{
+  "name": "idea-cloud",
+  "version": "1.0.0",
+  "description": "Easy idea board generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toorhamza/idea-cloud.git"
+  },
+  "keywords": [
+    "ideas",
+    "generate",
+    "cloud",
+    "idea",
+    "board"
+  ],
+  "author": "Hamza Ahmad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toorhamza/idea-cloud/issues"
+  },
+  "homepage": "https://github.com/toorhamza/idea-cloud#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.5.0"
+  }
+}
