@@ -10,10 +10,12 @@ const userSchema = new Mongoose.Schema({
     type: String,
     required: [true, "Please enter a valid username with minimum 5 characters"],
     min: 5,
+    unique: true,
   },
   email: {
     type: String,
     required: [true, "Please enter Email Address"],
+    unique: true,
     validate: [validateEmail, "Please fill a valid email address"],
   },
   passwordHash: {
@@ -22,7 +24,5 @@ const userSchema = new Mongoose.Schema({
   },
   created: { type: Date, default: Date.now },
 });
-
-
 
 module.exports = Mongoose.model("User", userSchema);
