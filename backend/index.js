@@ -1,12 +1,16 @@
 const express = require("express");
 const app = express();
+const cors = require("cors");
 
-const { PORT } = require("./lib/config");
+const { PORT, FRONTEND_URL } = require("./lib/config");
 const { connectToDb } = require("./lib/db");
 const errorHandler = require("./middleware/errorHandler");
 const router = require("./routes/index");
 
 app.use(express.json()); // to support JSON-encoded bodies
+app.use(cors({
+  origin: FRONTEND_URL
+}));
 app.use(router);
 
 app.get("/status", (req, res) => {
