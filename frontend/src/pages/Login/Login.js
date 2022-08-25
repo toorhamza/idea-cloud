@@ -30,8 +30,8 @@ export default function Login() {
     const data = new FormData(event.currentTarget);
     const email = data.get("email");
     const password = data.get("password");
-    await login(email, password);
-    setIsLoggedIn(true);
+    const loginResponse = await login(email, password);
+    if (loginResponse.uuid) setIsLoggedIn(true);
   };
 
   if (isLoggedIn) return null;

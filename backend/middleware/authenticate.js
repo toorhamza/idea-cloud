@@ -10,8 +10,8 @@ const authenticate = (request, response, next) => {
       if (err) {
         return response.sendStatus(403);
       }
-
       request.user = user;
+      next();
     });
   } else {
     response.sendStatus(401);

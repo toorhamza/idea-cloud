@@ -9,3 +9,4 @@ Full Stack Open Final Project - 10 credits
 | 07.08.2022 | 6    | added login, register routes with some validations and authenticate middleware, solved github node_modules issue |
 | 11.08.2022 | 7    | set up react layout, added material ui, added header component, started with set up login & logout pages, started with auth context |
 | 13.08.2022 | 6    | added auth context with login logout functions, added login, register & logout pages, fixed small issues, updated backend a little |
+| 25.08.2022 | 4    | added board models & endpoints backend. Fixed login router issue in frontend |
